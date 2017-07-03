@@ -28,7 +28,6 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
 
         initComponents();
 
-        // jmIVenta.setMnemonic(KeyEvent.VK_V);
         this.setLocationRelativeTo(null);
         lblCod_persona.setVisible(false);
         this.setExtendedState(MAXIMIZED_BOTH);
@@ -49,8 +48,6 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
                 g.fillRect(0, 0, getWidth(), getHeight());
             }
         });
-
-        //jmIVentas.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
     }
 
     public void abrirVenta() {
@@ -58,7 +55,6 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
         FrmVentaDetalle form = new FrmVentaDetalle();
         deskPricipal.add(form);
 
-        //   form.setMaximizable(true);
         form.setClosable(true);
         form.setIconifiable(true);
         FrmVentaDetalle.txtCod_usuario.setText(lblCod_persona.getText());
@@ -544,8 +540,6 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
 
         FrmMostrarVentas form = new FrmMostrarVentas();
         deskPricipal.add(form);
-
-        //   form.setMaximizable(true);
         try {
             form.setMaximum(true);
             form.setClosable(true);
@@ -577,7 +571,6 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
             JasperViewer jv = new JasperViewer(jp, false);
             jv.show();
 
-            // JasperPrintManager.printReport( jp, true);
         } catch (Exception e) {
 
             JOptionPane.showMessageDialog(rootPane, "error" + e);
@@ -590,7 +583,6 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
         rptVentasFechas form = new rptVentasFechas();
         deskPricipal.add(form);
 
-        //   form.setMaximizable(true);
         try {
             form.setMaximum(false);
             form.setClosable(true);
@@ -610,7 +602,6 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
         rptVentasFechas form = new rptVentasFechas();
         deskPricipal.add(form);
 
-        //   form.setMaximizable(true);
         try {
             form.setMaximum(false);
             form.setClosable(true);
@@ -647,7 +638,6 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
         rptComprasFechas form = new rptComprasFechas();
         deskPricipal.add(form);
 
-        //   form.setMaximizable(true);
         try {
             form.setMaximum(false);
             form.setClosable(true);
