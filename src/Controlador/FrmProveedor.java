@@ -32,7 +32,6 @@ public final class FrmProveedor extends javax.swing.JInternalFrame {
 
                 JLabel l = (JLabel) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 
-                //l.setBorder(new LineBorder(Color.black, 1));
                 l.setBackground(new java.awt.Color(36, 33, 33));
                 l.setForeground(new java.awt.Color(25, 118, 210));
                 l.setFont(new java.awt.Font("Arial", 1, 12));
@@ -100,7 +99,6 @@ public final class FrmProveedor extends javax.swing.JInternalFrame {
             modelo = funcion.mostrar(buscar);
             jTabla.setModel(modelo);
             ocultar_columnas();
-          // lblTotalRegistros.setText("N° de Registros : " + Integer.toString(funcion.totalRegistros));
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
@@ -152,10 +150,10 @@ public final class FrmProveedor extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jPanel1.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
         jTabla.setBackground(new java.awt.Color(36, 33, 33));
         jTabla.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -179,7 +177,7 @@ public final class FrmProveedor extends javax.swing.JInternalFrame {
         });
         jScrollPane2.setViewportView(jTabla);
 
-        jPanel3.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
 
         txtRut.setBackground(new java.awt.Color(36, 33, 33));
         txtRut.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -353,7 +351,7 @@ public final class FrmProveedor extends javax.swing.JInternalFrame {
                 .addGap(61, 61, 61))
         );
 
-        jPanel4.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
 
         btnNuevo.setBackground(new java.awt.Color(36, 33, 33));
         btnNuevo.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
@@ -414,10 +412,10 @@ public final class FrmProveedor extends javax.swing.JInternalFrame {
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
-        jPanel5.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel5.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel20.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(207, 207, 207));
+        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
         jLabel20.setText("Nombre :");
 
         txtBuscar.setBackground(new java.awt.Color(36, 33, 33));
@@ -731,21 +729,21 @@ public final class FrmProveedor extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txtRutActionPerformed
 
     private void txtNombre_personaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombre_personaKeyTyped
-        /*char c = evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (Character.isDigit(c)) {
             getToolkit().beep();
             evt.consume();
-            //JOptionPane.showMessageDialog(null, "Ingrese solo letras");
-        }*/
+            JOptionPane.showMessageDialog(null, "Ingrese solo letras");
+        }
     }//GEN-LAST:event_txtNombre_personaKeyTyped
 
     private void txtBuscarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarKeyTyped
-        /*char c = evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (Character.isDigit(c)) {
             getToolkit().beep();
             evt.consume();
-            // JOptionPane.showMessageDialog(null, "Ingrese solo letras");
-        }*/
+             JOptionPane.showMessageDialog(null, "Ingrese solo letras");
+        }
     }//GEN-LAST:event_txtBuscarKeyTyped
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked

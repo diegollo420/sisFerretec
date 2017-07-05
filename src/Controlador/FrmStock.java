@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Controlador;
 
 import Datos.Dproducto;
@@ -34,7 +30,6 @@ public class FrmStock extends javax.swing.JInternalFrame {
 
                 JLabel l = (JLabel) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 
-                //l.setBorder(new LineBorder(Color.black, 1));
                 l.setBackground(new java.awt.Color(36, 33, 33));
                 l.setForeground(new java.awt.Color(25, 118, 210));
                 l.setFont(new java.awt.Font("Arial", 1, 12));
@@ -49,7 +44,6 @@ public class FrmStock extends javax.swing.JInternalFrame {
         txtNombre_producto.setEditable(false);
         txtDescripcion_producto.setEditable(false);
         txtPrecio.setEditable(false);
-       // cboUnidad_producto.setEnabled(false);
         txtStock.setEditable(false);
         txtBuscar.setEditable(false);
         btnBuscar.setEnabled(false);
@@ -90,7 +84,6 @@ public class FrmStock extends javax.swing.JInternalFrame {
             }
             jTabla.setModel(modelo);
 
-//            lblTotalRegistros.setText("Registros : " + Integer.toString(funcion.totalRegistros));
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
@@ -147,9 +140,9 @@ public class FrmStock extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
-        jPanel1.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
         jTabla.setBackground(new java.awt.Color(36, 33, 33));
@@ -179,20 +172,22 @@ public class FrmStock extends javax.swing.JInternalFrame {
 
         jLabel12.setText(" ");
 
-        jPanel3.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        jrbAumentar.setBackground(new java.awt.Color(36, 33, 33));
+        jrbAumentar.setBackground(new java.awt.Color(102, 102, 102));
         btnGroup.add(jrbAumentar);
         jrbAumentar.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jrbAumentar.setForeground(new java.awt.Color(207, 207, 207));
+        jrbAumentar.setForeground(new java.awt.Color(0, 0, 0));
         jrbAumentar.setText("Agregar");
+        jrbAumentar.setBorderPainted(true);
 
-        jrbDisminuir.setBackground(new java.awt.Color(36, 33, 33));
+        jrbDisminuir.setBackground(new java.awt.Color(102, 102, 102));
         btnGroup.add(jrbDisminuir);
         jrbDisminuir.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jrbDisminuir.setForeground(new java.awt.Color(207, 207, 207));
+        jrbDisminuir.setForeground(new java.awt.Color(0, 0, 0));
         jrbDisminuir.setText("Disminuir");
+        jrbDisminuir.setBorderPainted(true);
 
         txtValor.setBackground(new java.awt.Color(36, 33, 33));
         txtValor.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -237,15 +232,14 @@ public class FrmStock extends javax.swing.JInternalFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtValor, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAceptarValores))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addComponent(jrbAumentar, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jrbDisminuir, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(jrbDisminuir, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(207, 207, 207));
@@ -391,7 +385,7 @@ public class FrmStock extends javax.swing.JInternalFrame {
                 .addGap(0, 32, Short.MAX_VALUE))
         );
 
-        jPanel5.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel5.setBackground(new java.awt.Color(102, 102, 102));
 
         btnnuevo.setBackground(new java.awt.Color(36, 33, 33));
         btnnuevo.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
@@ -421,7 +415,7 @@ public class FrmStock extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel6.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel6.setBackground(new java.awt.Color(102, 102, 102));
 
         cboSelec.setBackground(new java.awt.Color(36, 33, 33));
         cboSelec.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -634,7 +628,6 @@ public class FrmStock extends javax.swing.JInternalFrame {
         }
         txtValor.setText("");
         mostrar("");
-        //jrbAumentar.setSelected(true);
     }//GEN-LAST:event_btnAceptarValoresActionPerformed
 
     private void btnnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevoActionPerformed

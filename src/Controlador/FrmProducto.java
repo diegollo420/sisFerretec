@@ -80,7 +80,7 @@ public final class FrmProducto extends javax.swing.JInternalFrame {
 
                     for (int j = 0; j < table.getRowCount(); j++) {
                         Object object = table.getValueAt(j, i);
-                        s.addCell(new Label(i, j + 1, String.valueOf(object))); //lo pone en la fila 0+1
+                        s.addCell(new Label(i, j + 1, String.valueOf(object)));
                     }
                 }
             }
@@ -116,7 +116,6 @@ public final class FrmProducto extends javax.swing.JInternalFrame {
         btnEditar.setEnabled(false);
         btnEliminar.setEnabled(false);
         btnGuardar.setEnabled(false);
-//        lblSalir.setEnabled(true);
         btnNuevo.setEnabled(true);
 
         txtCod_producto.setText("");
@@ -162,8 +161,7 @@ public final class FrmProducto extends javax.swing.JInternalFrame {
             }
 
             jTabla.setModel(modelo);
-            // ocultar_columnas();
-            //  lblTotalRegistros.setText("Cantidad de Registros : " + Integer.toString(funcion.totalRegistros));
+             ocultar_columnas();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
@@ -181,8 +179,8 @@ public final class FrmProducto extends javax.swing.JInternalFrame {
             }
 
             jTabla.setModel(modelo);
-            // ocultar_columnas();
-            //  lblTotalRegistros.setText("Cantidad de Registros : " + Integer.toString(funcion.totalRegistros));
+            
+            
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
@@ -241,10 +239,10 @@ public final class FrmProducto extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jPanel1.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setPreferredSize(new java.awt.Dimension(822, 479));
 
         jTabla.setBackground(new java.awt.Color(36, 33, 33));
@@ -271,7 +269,7 @@ public final class FrmProducto extends javax.swing.JInternalFrame {
 
         jLabel12.setText(" ");
 
-        jPanel3.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
 
         cboSelec.setBackground(new java.awt.Color(36, 33, 33));
         cboSelec.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -354,7 +352,7 @@ public final class FrmProducto extends javax.swing.JInternalFrame {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(207, 207, 207));
@@ -553,7 +551,7 @@ public final class FrmProducto extends javax.swing.JInternalFrame {
                 .addContainerGap(34, Short.MAX_VALUE))
         );
 
-        jPanel5.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel5.setBackground(new java.awt.Color(102, 102, 102));
 
         btnNuevo.setBackground(new java.awt.Color(36, 33, 33));
         btnNuevo.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
@@ -713,9 +711,6 @@ public final class FrmProducto extends javax.swing.JInternalFrame {
         String precioProducto = txtPrecio.getText();
         String precioProducto2 = precioProducto.replaceAll("\\.", "");
         datos.setPrecio_producto(Long.valueOf(precioProducto2));
-
-        //  datos.setPrecio_producto(Long.valueOf(txtPrecio.getText()));
-        // datos.setPrecio_compra(Long.valueOf(txtPrecio_compra.getText()));
         String precioCompraProd = txtPrecio_compra.getText();
         String precioCompraProd2 = precioCompraProd.replaceAll("\\.", "");
         datos.setPrecio_compra(Long.valueOf(precioCompraProd2));
@@ -788,9 +783,6 @@ public final class FrmProducto extends javax.swing.JInternalFrame {
         String precioProducto = txtPrecio.getText();
         String precioProducto2 = precioProducto.replaceAll("\\.", "");
         datos.setPrecio_producto(Long.valueOf(precioProducto2));
-
-        //  datos.setPrecio_producto(Long.valueOf(txtPrecio.getText()));
-        // datos.setPrecio_compra(Long.valueOf(txtPrecio_compra.getText()));
         String precioCompraProd = txtPrecio_compra.getText();
         String precioCompraProd2 = precioCompraProd.replaceAll("\\.", "");
         datos.setPrecio_compra(Long.valueOf(precioCompraProd2));

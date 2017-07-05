@@ -98,14 +98,13 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
         JmITotalRecaudacion = new javax.swing.JMenuItem();
         JmiHerramientas = new javax.swing.JMenu();
         JmIHerramientaVenta = new javax.swing.JMenuItem();
-        JmIHerramientaRespaldo = new javax.swing.JMenuItem();
         jMIAyuda = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(36, 33, 33));
 
-        deskPricipal.setBackground(new java.awt.Color(36, 33, 33));
+        deskPricipal.setBackground(new java.awt.Color(102, 102, 102));
         deskPricipal.setToolTipText("");
         deskPricipal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         deskPricipal.setOpaque(true
@@ -138,7 +137,7 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
         menuBar.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         menuBar.setOpaque(true);
 
-        jmIVenta.setBackground(new java.awt.Color(36, 33, 33));
+        jmIVenta.setBackground(new java.awt.Color(102, 102, 102));
         jmIVenta.setForeground(new java.awt.Color(245, 245, 245));
         jmIVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImanegesMenuBar/ventaMenu.png"))); // NOI18N
         jmIVenta.setText("Venta");
@@ -165,7 +164,7 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
 
         menuBar.add(jmIVenta);
 
-        MenuCompras.setBackground(new java.awt.Color(36, 33, 33));
+        MenuCompras.setBackground(new java.awt.Color(102, 102, 102));
         MenuCompras.setForeground(new java.awt.Color(245, 245, 245));
         MenuCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImanegesMenuBar/compraMenu.png"))); // NOI18N
         MenuCompras.setText("Compra");
@@ -188,7 +187,7 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
 
         menuBar.add(MenuCompras);
 
-        MenuPersonal.setBackground(new java.awt.Color(36, 33, 33));
+        MenuPersonal.setBackground(new java.awt.Color(102, 102, 102));
         MenuPersonal.setForeground(new java.awt.Color(245, 245, 245));
         MenuPersonal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImanegesMenuBar/usuarioMenu.png"))); // NOI18N
         MenuPersonal.setText("Personal");
@@ -237,7 +236,7 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
 
         menuBar.add(MenuPersonal);
 
-        MenuProductos.setBackground(new java.awt.Color(36, 33, 33));
+        MenuProductos.setBackground(new java.awt.Color(102, 102, 102));
         MenuProductos.setForeground(new java.awt.Color(245, 245, 245));
         MenuProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImanegesMenuBar/codigoMenu.png"))); // NOI18N
         MenuProductos.setText("Productos");
@@ -293,7 +292,7 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
 
         menuBar.add(MenuProductos);
 
-        MenuInformes.setBackground(new java.awt.Color(36, 33, 33));
+        MenuInformes.setBackground(new java.awt.Color(102, 102, 102));
         MenuInformes.setForeground(new java.awt.Color(245, 245, 245));
         MenuInformes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImanegesMenuBar/reporteMenu.png"))); // NOI18N
         MenuInformes.setText("Informes");
@@ -368,7 +367,7 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
 
         menuBar.add(MenuInformes);
 
-        JmiHerramientas.setBackground(new java.awt.Color(36, 33, 33));
+        JmiHerramientas.setBackground(new java.awt.Color(102, 102, 102));
         JmiHerramientas.setForeground(new java.awt.Color(245, 245, 245));
         JmiHerramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImanegesMenuBar/toolsMenu.png"))); // NOI18N
         JmiHerramientas.setText("Herramientas");
@@ -389,18 +388,9 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
         });
         JmiHerramientas.add(JmIHerramientaVenta);
 
-        JmIHerramientaRespaldo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F9, 0));
-        JmIHerramientaRespaldo.setText("Herramienta de Respaldo");
-        JmIHerramientaRespaldo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JmIHerramientaRespaldoActionPerformed(evt);
-            }
-        });
-        JmiHerramientas.add(JmIHerramientaRespaldo);
-
         menuBar.add(JmiHerramientas);
 
-        jMIAyuda.setBackground(new java.awt.Color(36, 33, 33));
+        jMIAyuda.setBackground(new java.awt.Color(102, 102, 102));
         jMIAyuda.setForeground(new java.awt.Color(245, 245, 245));
         jMIAyuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImanegesMenuBar/ayuda.png"))); // NOI18N
         jMIAyuda.setText("Ayuda");
@@ -412,7 +402,7 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
         });
         menuBar.add(jMIAyuda);
 
-        jMenu5.setBackground(new java.awt.Color(36, 33, 33));
+        jMenu5.setBackground(new java.awt.Color(102, 102, 102));
         jMenu5.setForeground(new java.awt.Color(245, 245, 245));
         jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImanegesMenuBar/exitMenu.png"))); // NOI18N
         jMenu5.setText("Salir");
@@ -726,10 +716,6 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
         );
     }//GEN-LAST:event_jMIAyudaMouseClicked
 
-    private void JmIHerramientaRespaldoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JmIHerramientaRespaldoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_JmIHerramientaRespaldoActionPerformed
-
     public static void main(String args[]) {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -765,7 +751,6 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     javax.swing.JMenuItem JMICompra;
     public static javax.swing.JMenuItem JmIClientes;
-    javax.swing.JMenuItem JmIHerramientaRespaldo;
     public static javax.swing.JMenuItem JmIHerramientaVenta;
     javax.swing.JMenuItem JmIProdCompraFEc;
     javax.swing.JMenuItem JmIProdVendFEc;

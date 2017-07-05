@@ -51,7 +51,6 @@ public class FrmMostrarVentas extends javax.swing.JInternalFrame {
 
                 JLabel l = (JLabel) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 
-                //l.setBorder(new LineBorder(Color.black, 1));
                 l.setBackground(new java.awt.Color(36, 33, 33));
                 l.setForeground(new java.awt.Color(25, 118, 210));
                 l.setFont(new java.awt.Font("Arial", 1, 12));
@@ -162,12 +161,12 @@ public class FrmMostrarVentas extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jPanel1.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
-        jPanel4.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(207, 207, 207));
@@ -379,7 +378,7 @@ public class FrmMostrarVentas extends javax.swing.JInternalFrame {
         });
         jScrollPane2.setViewportView(jTabla);
 
-        jPanel3.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -589,7 +588,6 @@ public class FrmMostrarVentas extends javax.swing.JInternalFrame {
         a = cal.get(Calendar.YEAR) - 1900;
         datos.setFecha_venta(new Date(a, m, d));
 
-        // datos.setTotal_venta(Long.valueOf(txtTotal_venta.getText()));
         String totalVenta = txtTotal_venta.getText();
         String totalVenta2 = totalVenta.replaceAll("\\.", "");
         datos.setTotal_venta(Long.valueOf(totalVenta2));

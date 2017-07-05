@@ -28,7 +28,6 @@ public final class FrmInstalacion extends javax.swing.JFrame {
         cboAcceso.setEnabled(false);
 
         btnGuardar.setEnabled(false);
-        // lblSalir.setEnabled(true);
         btnNuevo.setEnabled(true);
 
         txtCod_persona.setText("");
@@ -59,7 +58,6 @@ public final class FrmInstalacion extends javax.swing.JFrame {
 
 
         btnGuardar.setEnabled(true);
-        // lblSalir.setEnabled(true);
         btnNuevo.setEnabled(false);
 
         txtCod_persona.setText("");
@@ -108,9 +106,9 @@ public final class FrmInstalacion extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
-        jPanel1.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(207, 207, 207));
@@ -493,7 +491,7 @@ public final class FrmInstalacion extends javax.swing.JFrame {
         if (Character.isDigit(c)) {
             getToolkit().beep();
             evt.consume();
-           // JOptionPane.showMessageDialog(null, "Ingrese solo letras");
+           JOptionPane.showMessageDialog(null, "Ingrese solo letras");
         }
     }//GEN-LAST:event_txtNombre_personaKeyTyped
 

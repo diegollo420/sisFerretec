@@ -156,10 +156,10 @@ public final class FrmCliente extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jPanel1.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
         jTabla.setBackground(new java.awt.Color(36, 33, 33));
         jTabla.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -181,7 +181,7 @@ public final class FrmCliente extends javax.swing.JInternalFrame {
         });
         jScrollPane2.setViewportView(jTabla);
 
-        jPanel3.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(207, 207, 207));
@@ -345,7 +345,7 @@ public final class FrmCliente extends javax.swing.JInternalFrame {
                 .addContainerGap(69, Short.MAX_VALUE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
 
         btnNuevo.setBackground(new java.awt.Color(36, 33, 33));
         btnNuevo.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
@@ -407,11 +407,11 @@ public final class FrmCliente extends javax.swing.JInternalFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        jPanel5.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel5.setBackground(new java.awt.Color(102, 102, 102));
 
-        jLabel20.setBackground(new java.awt.Color(224, 224, 224));
+        jLabel20.setBackground(new java.awt.Color(0, 0, 0));
         jLabel20.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(207, 207, 207));
+        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
         jLabel20.setText("Nombre Cliente");
 
         txtBuscar.setBackground(new java.awt.Color(36, 33, 33));

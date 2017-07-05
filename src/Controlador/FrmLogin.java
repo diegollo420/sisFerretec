@@ -56,9 +56,9 @@ public class FrmLogin extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
-        jPanel1.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
         txtpassword.setBackground(new java.awt.Color(36, 33, 33));
         txtpassword.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -166,7 +166,7 @@ public class FrmLogin extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tablalistado);
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(25, 118, 210));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Iniciar Sesion");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);

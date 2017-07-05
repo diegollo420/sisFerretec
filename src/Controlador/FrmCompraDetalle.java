@@ -322,13 +322,13 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setPreferredSize(new java.awt.Dimension(828, 547));
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel2.setPreferredSize(new java.awt.Dimension(822, 521));
 
-        jPanel1.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
-        jPanel3.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
 
         dcFecha_compra.setBackground(new java.awt.Color(36, 33, 33));
         dcFecha_compra.setForeground(new java.awt.Color(36, 33, 33));
@@ -486,7 +486,7 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
         });
         jScrollPane3.setViewportView(jTabla);
 
-        jPanel7.setBackground(new java.awt.Color(238, 238, 238));
+        jPanel7.setBackground(new java.awt.Color(102, 102, 102));
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -561,7 +561,7 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
                 .addContainerGap(34, Short.MAX_VALUE))
         );
 
-        jPanel5.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel5.setBackground(new java.awt.Color(102, 102, 102));
 
         txtCod_producto.setBackground(new java.awt.Color(36, 33, 33));
         txtCod_producto.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -847,11 +847,11 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 818, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 515, Short.MAX_VALUE)
         );
 
         pack();
@@ -957,7 +957,6 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
 
             String subTotal3 = txtSubTotal.getText();
             String subTotal4 = subTotal3.replaceAll("\\.", "");
-            //long valor2 = Long.parseLong(txtSubTotal.getText());
             long valor2 = Long.parseLong(subTotal4);
             long total = valorProd * Cantidad;
             long resultado = total + valor2;
@@ -1033,14 +1032,12 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
             String precioProducto = txtPrecio_producto.getText();
             String precioProducto2 = precioProducto.replaceAll("\\.", "");
 
-            // long valorProd = Long.valueOf(txtPrecio_producto.getText());
             long valorProd = Long.valueOf(precioProducto2);
 
             int cantidadProd = Integer.parseInt(txtCantidadProducto.getText());
 
             String subTotal1 = txtSubTotal.getText();
             String subTotal2 = subTotal1.replaceAll("\\.", "");
-            //long valor2 = Long.valueOf(txtSubTotal.getText());
             long valor2 = Long.valueOf(subTotal2);
 
             long total = valorProd * cantidadProd;
@@ -1130,7 +1127,6 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jTablaMouseClicked
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        /*PARTE VALIDACION DE CAMPOS*/
         if (txtCod_proveedor.getText().length() == 0 || txtNombreProveedor.getText().length() == 0) {
             JOptionPane.showMessageDialog(null, "Seleccione un Proveedor");
             btnBuscarPro.requestFocus();
@@ -1157,7 +1153,6 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
         String totalCompra2 = totalCompra.replaceAll("\\.", "");
         datos.setTotal_compra(Long.valueOf(totalCompra2));
 
-        //datos.setTotal_compra(Long.valueOf(txtTotal_venta.getText()));
         int comprobante = cboComprobante.getSelectedIndex();
         datos.setTipo_comprobante((String) cboComprobante.getItemAt(comprobante));
         datos.setNum_comprobante(Integer.parseInt(txtNumComprobante.getText()));
@@ -1182,12 +1177,10 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
         FrmVistaProveedor form = new FrmVistaProveedor();
         Comprueba = 2;
         deskPricipal.add(form);
-        //   form.setClosable(true);
 
         form.setMaximizable(false);
         form.toFront();
         form.setVisible(true);
-        // this.setLocationRelativeTo(null);
 
     }//GEN-LAST:event_btnBuscarProActionPerformed
 
@@ -1251,93 +1244,7 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jLabel13MouseClicked
 
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmCompraDetalle.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmCompraDetalle.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmCompraDetalle.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmCompraDetalle.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new FrmCompraDetalle().setVisible(true);

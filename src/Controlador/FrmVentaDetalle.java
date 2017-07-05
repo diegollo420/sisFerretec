@@ -46,7 +46,6 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
 
     public FrmVentaDetalle() {
         initComponents();
-        //btnGuardar.setMnemonic(KeyEvent.VK_X);
         DetallesFormVenta();
         lblModo.setLabelFor(cboModoIngreso);
         lblModo.setDisplayedMnemonic('y');
@@ -88,7 +87,6 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
 
                 JLabel l = (JLabel) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 
-                //l.setBorder(new LineBorder(Color.black, 1));
                 l.setBackground(new java.awt.Color(36, 33, 33));
                 l.setForeground(new java.awt.Color(25, 118, 210));
                 l.setFont(new java.awt.Font("Arial", 1, 12));
@@ -121,7 +119,6 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
 
         Fventa funcion = new Fventa();
         int codigo = funcion.BuscarCodigoVenta();
-        //ACA PODRIA PONER PARA EN UN LBL MOSTRAR EL NUMERO DE VENTA
         txtCod_venta.setText(String.valueOf(codigo));
         txtCod_ventaFK.setText(String.valueOf(codigo));
     }
@@ -139,9 +136,7 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
 
     }
 
-    /**
-     * ****BUSQUEDA SI EL CODIGO DEL PRODUCTO EXISTE**
-     */
+    
     public void seleccionProd() {
 
         Fdetalle_venta funcion = new Fdetalle_venta();
@@ -243,7 +238,7 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
             String mostrar0 = formatea.format(resultado);
             txtSubTotal.setText(String.valueOf(mostrar0));
 
-            String mostrar3 = formatea.format(resultadoDescuento);//resultado
+            String mostrar3 = formatea.format(resultadoDescuento);
             txtTotal_venta.setText(String.valueOf(mostrar3));
 
             Dventa datos1 = new Dventa();
@@ -391,12 +386,12 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jPanel1.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
-        jPanel3.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
 
         dcFecha_venta.setBackground(new java.awt.Color(36, 33, 33));
         dcFecha_venta.setForeground(new java.awt.Color(207, 207, 207));
@@ -576,13 +571,14 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
         });
         jScrollPane3.setViewportView(jTabla);
 
-        jPanel5.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel5.setBackground(new java.awt.Color(102, 102, 102));
 
-        jPanel6.setBackground(new java.awt.Color(238, 238, 238));
+        jPanel6.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel14.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel14.setText("IMPORTE");
 
+        txtImporte.setBackground(new java.awt.Color(102, 102, 102));
         txtImporte.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         txtImporte.setText("0");
         txtImporte.setSelectionColor(new java.awt.Color(0, 0, 0));
@@ -596,9 +592,10 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
         jLabel15.setText("CAMBIO");
 
         txtCambio.setEditable(false);
-        txtCambio.setBackground(new java.awt.Color(255, 255, 255));
+        txtCambio.setBackground(new java.awt.Color(153, 153, 153));
         txtCambio.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         txtCambio.setText("0");
+        txtCambio.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createCompoundBorder(), null));
         txtCambio.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         txtCambio.setSelectionColor(new java.awt.Color(0, 0, 0));
 
@@ -634,7 +631,7 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
                 .addGap(6, 6, 6))
         );
 
-        jPanel7.setBackground(new java.awt.Color(238, 238, 238));
+        jPanel7.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel8.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel8.setText("SUB TOTAL");
@@ -673,6 +670,7 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
         jLabel9.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel9.setText("%");
 
+        jLabel20.setBackground(new java.awt.Color(255, 255, 255));
         jLabel20.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel20.setText("DESCUENTO");
 
@@ -681,21 +679,27 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(43, Short.MAX_VALUE)
                 .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35))
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel20)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(txtDescuento, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel9))
                     .addComponent(txtTotal_venta)
-                    .addComponent(txtSubTotal, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addComponent(txtSubTotal, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel20)
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel8)
+                                    .addGroup(jPanel7Layout.createSequentialGroup()
+                                        .addGap(23, 23, 23)
+                                        .addComponent(txtDescuento, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(7, 7, 7)
+                                .addComponent(jLabel9)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
@@ -762,7 +766,7 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
@@ -1159,8 +1163,6 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
         comprobarProducto = 2;
         FrmVistaProducto form = new FrmVistaProducto();
         deskPricipal.add(form);
-        //   form.setIconifiable(true);
-        // form.setMaximizable(false);
         form.toFront();
         form.setVisible(true);
 
@@ -1218,10 +1220,6 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
         long var1 = Long.parseLong(prec2);
         long var2 = Long.parseLong(txtCantidadProducto.getText());
         long var3 = Long.parseLong(SubPrec2);
-
-        // long var1 = Long.parseLong(txtPrecio_producto.getText());
-        // long var2 = Long.parseLong(txtCantidadProducto.getText());
-        //  long var3 =Long.parseLong(txtSubPrecioCompra.getText());
         long resultadoDetalle = var1 * var2;
         long resultadoDetalle2 = var2 * var3;
         Ddetalle_venta datos = new Ddetalle_venta();
@@ -1243,15 +1241,12 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
         datos.setSubPrecioCompra(Long.valueOf(subPrecCompra2));
 
         if (funcion.insertar(datos)) {
-
-            // long valorProd = Long.parseLong(txtPrecio_producto.getText());
-            //long valor2 = Long.parseLong(txtSubTotal.getText());
             long valorProd = Long.parseLong(precioProducto2);
 
             String subTotal3 = txtSubTotal.getText();
             String subTotal4 = subTotal3.replaceAll("\\.", "");
 
-            //long valor2 = Long.parseLong(txtSubTotal.getText());
+
             long valor2 = Long.parseLong(subTotal4);
 
             int descuento = Integer.parseInt(txtDescuento.getText());
@@ -1266,22 +1261,20 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
             String mostrar0 = formatea.format(resultado);
             txtSubTotal.setText(String.valueOf(mostrar0));
 
-            String mostrar3 = formatea.format(resultadoDescuento);//resultado
+            String mostrar3 = formatea.format(resultadoDescuento);
             txtTotal_venta.setText(String.valueOf(mostrar3));
 
             Dventa datos1 = new Dventa();
             Fventa funcion1 = new Fventa();
             datos1.setCod_venta(Integer.parseInt(txtCod_ventaFK.getText()));
-
-            //  datos1.setTotal_venta(Long.valueOf(txtTotal_venta.getText()));
             String totalVenta1 = txtTotal_venta.getText();
             String totalVenta2 = totalVenta1.replaceAll("\\.", "");
             datos1.setTotal_venta(Long.valueOf(totalVenta2));
 
             funcion1.Total(datos1);
-            /**
-             * ****Quitar Stock*+++++++++
-             */
+            
+                //Quitar Stock*+++++++++
+             
             Dproducto datos2 = new Dproducto();
             Fproducto funcion2 = new Fproducto();
             int stock = 0;
@@ -1316,14 +1309,11 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
 
             String precioProducto = txtPrecio_producto.getText();
             String precioProducto2 = precioProducto.replaceAll("\\.", "");
-
-            // long valorProd = Long.valueOf(txtPrecio_producto.getText());
             long valorProd = Long.valueOf(precioProducto2);
 
             int cantidadProd = Integer.parseInt(txtCantidadProducto.getText());
             String subTotal1 = txtSubTotal.getText();
             String subTotal2 = subTotal1.replaceAll("\\.", "");
-            //long valor2 = Long.valueOf(txtSubTotal.getText());
             long valor2 = Long.valueOf(subTotal2);
             int descuento = Integer.parseInt(txtDescuento.getText());
             
@@ -1346,9 +1336,9 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
             String totalVenta2 = totalVenta.replaceAll("\\.", "");
             datos1.setTotal_venta(Long.valueOf(totalVenta2));
             funcion1.Total(datos1);
-            /**
-             * ****Aumentar Stock*+++++++++
-             */
+          
+             //* ****Aumentar Stock*+++++++++
+            
             Dproducto datos2 = new Dproducto();
             Fproducto funcion2 = new Fproducto();
             int stock2 = 0;
@@ -1458,7 +1448,6 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(rootPane, "Vuelto : " + cambio1);
             Fventa funcion = new Fventa();
             Dventa datos = new Dventa();
-           //datos.setPago(Long.parseLong(txtImporte.getText()));
             datos.setPago(Long.parseLong(importe2));
             datos.setCod_venta(Integer.parseInt(txtCod_venta.getText()));
 
@@ -1467,7 +1456,6 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
             if (cboComprobante.getSelectedItem().equals("Factura")) {
                 try {
                     int codigo = Integer.parseInt(txtCod_venta.getText());
-                    //long pago = Long.parseLong(txtImporte.getText());
                     JasperReport jr = (JasperReport) JRLoader.loadObject(VistaBoleta.class.getResource("/Reportes/RptFactura.jasper"));
 
                     Map parametro = new HashMap<String, Integer>();
@@ -1477,7 +1465,6 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
                     JasperViewer jv = new JasperViewer(jp, false);
                     jv.show();
 
-                    // JasperPrintManager.printReport( jp, true);
                 } catch (Exception e) {
 
                     JOptionPane.showMessageDialog(rootPane, "error" + e);
@@ -1495,7 +1482,6 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
                     JasperViewer jv = new JasperViewer(jp, false);
                     jv.show();
 
-                    // JasperPrintManager.printReport( jp, true);
                     btnNuevo.setEnabled(true);
                 } catch (Exception e) {
 
@@ -1643,20 +1629,7 @@ public final class FrmVentaDetalle extends javax.swing.JInternalFrame {
         }
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
+  
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {

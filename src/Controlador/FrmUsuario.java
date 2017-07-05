@@ -29,7 +29,6 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
 
                 JLabel l = (JLabel) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 
-                //l.setBorder(new LineBorder(Color.black, 1));
                 l.setBackground(new java.awt.Color(36, 33, 33));
                 l.setForeground(new java.awt.Color(25, 118, 210));
                 l.setFont(new java.awt.Font("Arial", 1, 12));
@@ -55,9 +54,6 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
         txtRut.setEditable(false);
         txtLogin.setEditable(false);
         txtPassword.setEditable(false);
-       // cboEstado.setEditable(false);
-       // cboAcceso.setEditable(false);
-
         txtBuscar.setEditable(false);
 
         btnBuscar.setEnabled(false);
@@ -89,9 +85,6 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
         txtRut.setEditable(true);
         txtLogin.setEditable(true);
         txtPassword.setEditable(true);
-        //cboEstado.setEditable(true);
-        //cboAcceso.setEditable(true);
-
         txtBuscar.setEditable(true);
 
         btnBuscar.setEnabled(true);
@@ -121,7 +114,6 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
 
             jTabla.setModel(modelo);
             ocultar_columnas();
-            //lblTotalRegistros.setText("Total Registros " + Integer.toString(func.totalRegistros));
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
@@ -187,7 +179,7 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
         setMaximizable(true);
         setPreferredSize(new java.awt.Dimension(828, 547));
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel2.setPreferredSize(new java.awt.Dimension(822, 521));
 
@@ -198,7 +190,7 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setPreferredSize(new java.awt.Dimension(822, 479));
 
         jTabla.setBackground(new java.awt.Color(36, 33, 33));
@@ -223,7 +215,7 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
         });
         jScrollPane2.setViewportView(jTabla);
 
-        jPanel3.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(123, 194));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -485,7 +477,7 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
         jPanel4.setPreferredSize(new java.awt.Dimension(317, 47));
 
         btnEditar.setBackground(new java.awt.Color(36, 33, 33));
@@ -532,7 +524,7 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
                 .addComponent(btnGuardar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnEditar)
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -545,11 +537,11 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel5.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel5.setBackground(new java.awt.Color(102, 102, 102));
         jPanel5.setPreferredSize(new java.awt.Dimension(317, 47));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(207, 207, 207));
+        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
         jLabel20.setText("Nombre del Usuario :");
 
         txtBuscar.setBackground(new java.awt.Color(36, 33, 33));
@@ -607,7 +599,7 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
                         .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnEliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -622,7 +614,7 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE))
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 464, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -630,7 +622,7 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 334, Short.MAX_VALUE)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -658,7 +650,7 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
                 .addGap(29, 29, 29)
                 .addComponent(jLabel12)
                 .addGap(19, 19, 19))
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 818, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 814, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -670,18 +662,18 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
                         .addComponent(jLabel19))
                     .addComponent(jLabel12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 484, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 818, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 549, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 515, Short.MAX_VALUE)
         );
 
         pack();
@@ -727,7 +719,7 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
         if (Character.isDigit(c)) {
             getToolkit().beep();
             evt.consume();
-            //  JOptionPane.showMessageDialog(null, "Ingrese solo letras");
+             JOptionPane.showMessageDialog(null, "Ingrese solo letras");
         }
     }//GEN-LAST:event_txtBuscarKeyTyped
 
@@ -906,7 +898,7 @@ public final class FrmUsuario extends javax.swing.JInternalFrame {
         if (Character.isDigit(c)) {
             getToolkit().beep();
             evt.consume();
-            // JOptionPane.showMessageDialog(null, "Ingrese solo letras");
+            JOptionPane.showMessageDialog(null, "Ingrese solo letras");
         }
     }//GEN-LAST:event_txtNombre_personaKeyTyped
 
