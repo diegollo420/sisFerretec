@@ -47,14 +47,9 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
         txtStockDetalle.setVisible(false);
         txtCantidadProducto.setEditable(false);
         btnClick.setVisible(false);
-        // txtTotal_venta.setEditable(false);
         txtNumComprobante.setEditable(true);
         txtNumComprobante.setText("0");
         btnBuscarPro.requestFocus();
-        //  txtSubTotal.setEditable(false);
-        // txtIva.setEditable(false);
-     
-        //txtCambio.setEditable(false);
         mostrar("0");
 
         jTabla.getTableHeader().setDefaultRenderer(new DefaultTableCellRenderer() {
@@ -64,7 +59,6 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
                     boolean isSelected, boolean hasFocus, int row, int column) {
 
                 JLabel l = (JLabel) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-                //l.setBorder(new LineBorder(Color.black, 1));
                 l.setBackground(new java.awt.Color(36, 33, 33));
                 l.setForeground(new java.awt.Color(25, 118, 210));
                 l.setFont(new java.awt.Font("Arial", 1, 12));
@@ -97,7 +91,6 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
 
         Fcompra funcion = new Fcompra();
         int codigo = funcion.BuscarCodigoCompra();
-        //ACA PODRIA PONER PARA EN UN LBL MOSTRAR EL NUMERO DE VENTA
         txtCod_compra.setText(String.valueOf(codigo));
         txtCod_compraFK.setText(String.valueOf(codigo));
     }
@@ -927,7 +920,7 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
         int Cantidad = Integer.parseInt(txtCantidadProducto.getText());
         long Stock = Long.valueOf(txtStockDetalle.getText());
 
-        //long var1 = Long.parseLong(txtPrecio_producto.getText());
+        
         String prec = txtPrecio_producto.getText();
         String prec2 = prec.replaceAll("\\.", "");
 
@@ -946,7 +939,7 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
         String precioProducto2 = precioProducto.replaceAll("\\.", "");
         datos.setPrecio_producto(Long.valueOf(precioProducto2));
 
-        //  datos.setPrecio_producto(Long.valueOf(txtPrecio_producto.getText()));
+       
         String subTotal = String.valueOf(resultadoDetalle);
         String subTotal2 = subTotal.replaceAll("\\.", "");
         datos.setSubTotal(Long.valueOf(subTotal2));
@@ -976,9 +969,7 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
             datos1.setTotal_compra(Long.valueOf(totalCompra2));
 
             funcion1.Total(datos1);
-            /**
-             * ****Aumentar Stock*+++++++++
-             */
+            
             Dproducto datos2 = new Dproducto();
             Fproducto funcion2 = new Fproducto();
             int stock = 0;
@@ -1057,9 +1048,7 @@ public final class FrmCompraDetalle extends javax.swing.JInternalFrame {
             String totalCompra2 = totalCompra.replaceAll("\\.", "");
             datos1.setTotal_compra(Long.valueOf(totalCompra2));
             funcion1.Total(datos1);
-            /**
-             * ****Quitar Stock*+++++++++
-             */
+            
             Dproducto datos2 = new Dproducto();
             Fproducto funcion2 = new Fproducto();
             int stock2 = 0;
