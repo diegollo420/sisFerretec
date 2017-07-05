@@ -70,7 +70,7 @@ public class FrmVistaProducto extends javax.swing.JInternalFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setIconifiable(true);
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setName(""); // NOI18N
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N

@@ -22,10 +22,8 @@ public final class FrmCliente extends javax.swing.JInternalFrame {
         BasicInternalFrameUI bi = (BasicInternalFrameUI) this.getUI();
         bi.setNorthPane(null);
         this.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-
-        //  jTabla.setBackground(new java.awt.Color(66,66,66));
-        // jTabla.setForeground(new java.awt.Color(207,207,207));
-        //  jTabla.setFont(new java.awt.Font("Arial",0 , 12));
+        
+        
         jTabla.getTableHeader().setDefaultRenderer(new DefaultTableCellRenderer() {
 
             @Override
