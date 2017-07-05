@@ -50,9 +50,9 @@ public class rptComprasFechas extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
-        jPanel2.setBackground(new java.awt.Color(36, 33, 33));
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
         jPanel2.setFocusable(false);
 
         btnCancelar.setBackground(new java.awt.Color(36, 33, 33));
@@ -80,11 +80,11 @@ public class rptComprasFechas extends javax.swing.JInternalFrame {
         dcFecha_termino.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(25, 118, 210));
+        jLabel1.setForeground(new java.awt.Color(204, 204, 204));
         jLabel1.setText("Inicio :");
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(25, 118, 210));
+        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
         jLabel2.setText("Termino :");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -126,7 +126,7 @@ public class rptComprasFechas extends javax.swing.JInternalFrame {
         );
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(25, 118, 210));
+        jLabel10.setForeground(new java.awt.Color(204, 204, 204));
         jLabel10.setText("Compras entre fechas.");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
