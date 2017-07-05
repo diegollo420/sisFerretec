@@ -42,8 +42,6 @@ public class FrmVistaProducto extends javax.swing.JInternalFrame {
             modelo = funcion.mostrar(buscar);
 
             jTabla.setModel(modelo);
-            // ocultar_columnas();
-//            lblTotalRegistros.setText("CANTIDAD DE REGISTROS : " + Integer.toString(funcion.totalRegistros));
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);

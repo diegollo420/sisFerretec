@@ -738,21 +738,21 @@ public final class FrmCliente extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txtRutActionPerformed
 
     private void txtNombre_personaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombre_personaKeyTyped
-        /*char c = evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (Character.isDigit(c)) {
             getToolkit().beep();
             evt.consume();
-            //JOptionPane.showMessageDialog(null, "Ingrese solo letras");
-        }*/
+            JOptionPane.showMessageDialog(null, "Ingrese solo letras");
+        }
     }//GEN-LAST:event_txtNombre_personaKeyTyped
 
     private void txtBuscarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarKeyTyped
-        /*char c = evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (Character.isDigit(c)) {
             getToolkit().beep();
             evt.consume();
-            // JOptionPane.showMessageDialog(null, "Ingrese solo letras");
-        }*/
+            JOptionPane.showMessageDialog(null, "Ingrese solo letras");
+        }
     }//GEN-LAST:event_txtBuscarKeyTyped
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
