@@ -128,7 +128,7 @@ public class FRMPRINCIPAL extends javax.swing.JFrame {
         deskPricipal.add(lblAcceso);
         lblAcceso.setBounds(30, 80, 170, 10);
 
-        menuBar.setBackground(new java.awt.Color(36, 33, 33));
+        menuBar.setBackground(new java.awt.Color(102, 102, 102));
         menuBar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         menuBar.setToolTipText("");
         menuBar.setAlignmentX(0.2F);
